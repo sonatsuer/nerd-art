@@ -23,7 +23,7 @@ function setup() {
 function draw() {
   background(255);
   updateTriangle(mouseX, mouseY);
-  renderTriangel();
+  renderTriangle();
   renderSquare();
 }
 
@@ -38,7 +38,7 @@ function updateTriangle (x, y){
   yCoord += (targetY - yCoord) * coeff;
 }
 
-function renderTriangel(){
+function renderTriangle(){
   for(j = 0; j < 16; j++){
     for(i = 0; i < 16 - j; i++){
       x = xCoord - i*xFont;
